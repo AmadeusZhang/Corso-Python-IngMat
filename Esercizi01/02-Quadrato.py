@@ -9,9 +9,16 @@ N = int( input("Inserisci un numero intero postivivo: ") )
 # controllo su N
 if N > 0 :
     sq_N = 0
-    for ii in range(N) :
-        if ( ii%2 != 0 ) :
-            sq_N = sq_N + ii
+    
+    # interpretazione errata del testo
+    # for ii in range(N) :
+    #     if ( ii%2 != 0 ) :  # per ii dispari
+    #         sq_N = sq_N + ii
+    
+    ii = 0
+    while ii < N :              # sommo N numeri dispari
+        sq_N = sq_N + 2*ii + 1  # un numero dispari può essere espresso come 2k+1, per k = 1, ... , n
+        ii = ii + 1
             
     print("N^2 = ", sq_N)
     
