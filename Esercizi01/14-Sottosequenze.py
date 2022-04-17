@@ -14,9 +14,6 @@ Lung. max = 4
 
 '''
 
-from traceback import print_tb
-
-
 def main() :
     num = int(input("Inserisci un numero: "))
     prec = num
